@@ -1,0 +1,110 @@
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.main {
+  min-height: 600px;
+}
+.banner {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.banner_lists {
+  width: 500%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner_lists li {
+  float: left;
+  width: 100%;
+  height: 500px;
+}
+.banner_circle {
+  width: 20%;
+  position: absolute;
+  bottom: 15px;
+  left: 40%;
+  display: flex;
+}
+.banner_circle li {
+  flex: 1;
+  height: 7px;
+  margin: 0px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.banner_circle li:nth-child(1) {
+  background-color: #ff4902;
+}
+.banner_arrow {
+  padding: 0 20px;
+  width: 100%;
+  position: absolute;
+  top: 42%;
+  left: 0;
+}
+.banner_arrow a {
+  color: #999;
+  display: inline-block;
+  width: 40px;
+  height: 80px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 60px;
+}
+.arrow-left {
+  float: left;
+}
+.arrow-right {
+  float: right;
+}
+.banner:hover .banner_arrow a {
+  color: #ff4902;
+}
+.filter_title {
+  height: 30px;
+  line-height: 30px;
+  background: #eeeeee;
+  padding-left: 20px;
+}
+.filter_nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+.filter_nav li {
+  display: flex;
+  margin: 10px 0px;
+}
+.filter_nav li a {
+  flex: 1;
+}
+.filter_content {
+  height: 640px;
+  background: #eeeeee;
+}
+.filter_content>div {
+  width: 80%;
+  margin: 0 auto;
+}
+.movies_message {
+  height: 590px;
+}
+.page {
+  margin: 12px auto;
+  height: 30px;
+  display: flex;
+}
+.page p {
+  flex: 3;
+}
+.page btn {
+  flex: 1;
+}
