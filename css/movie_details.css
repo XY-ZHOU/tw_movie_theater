@@ -1,3 +1,32 @@
-.movie_name{
-    font-size: 20px;
+.main {
+  min-height: 600px;
+}
+.movie_name {
+  font-size: 25px;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+.movie_picture {
+  position: absolute;
+  left: 20%;
+  top: 15%;
+}
+.movie_information {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+}
+.movie_evaluation{
+    position: absolute;
+    left: 20%;
+    top:50%;
+}
+.movie_evaluation_logo{
+    font-size: 25px;
+}
+.recommendation{
+    position: absolute;
+    left: 20%;
+    top:80%;
 }
