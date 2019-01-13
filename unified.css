@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+
+.search_box {
+  flex: 3;
+  margin: 10px 20px;
+}
+
+.search_txt {
+  border: none;
+  height: 30px;
+  width: 60%;
+  border-radius: 7px;
+}
+
+.btn {
+  min-width: 50px;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  line-height: 30px;
+  padding: 0px 10px;
+  border-radius: 7px;
+}
+
+.header_nav {
+  flex: 1;
+  margin: 10px 20px;
+}
