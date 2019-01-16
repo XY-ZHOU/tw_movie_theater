@@ -30,19 +30,19 @@ function previousPageAndNextPage(currentPage,PageCount,itemCount,items){
 
 function traverseItems(currentPage, itemCount, items) {
   for (let i = (currentPage - 1) * itemCount; i < itemCount * currentPage; i++) {
-    let label = `<a  class="movie_item" href="movies_details.html" target="_blank">
-      <div>
-      <div class="movie_img">
-      <img src=` + items[i].image + ` alt=""/>
-      </div>
-      <div class="movie_title">
-      <p class="movie_name">` + items[i].title + `</p>
-      <p class="movie_score">
-      评分：` + items[i].rating + `
-      </p>
-      </div>
-      </div>
-      </a>`;
+    let label = `<a  class="movie_item" id=`+items[i].id+`>
+              <div>
+              <div class="movie_img">
+              <img src=` + items[i].image + ` alt=""/>
+              </div>
+              <div class="movie_title">
+              <p class="movie_name">` + items[i].title + `</p>
+              <p class="movie_score">
+              评分：` + items[i].rating + `
+              </p>
+             </div>
+             </div>
+             </a>`;
     $('.movies_message').append(label);
   }
 }
