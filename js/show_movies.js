@@ -47,3 +47,16 @@ function traverseItems(currentPage, itemCount, items) {
     $('.movies_message').append(label);
   }
 }
+
+function isShowpageBtn(currentPage, PageCount) {
+  if (currentPage <2) {
+    $('.previous_page').hide();
+  } else {
+    $('.previous_page').show();
+  }
+  if (currentPage == PageCount) {
+    $('.next_page').hide();
+  } else {
+    $('.next_page').show();
+  }
+}
