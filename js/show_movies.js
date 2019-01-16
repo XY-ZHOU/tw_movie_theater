@@ -14,7 +14,6 @@ function showMovies(items) {
 function previousPageAndNextPage(currentPage,PageCount,itemCount,items){
   $('.next_page').click(function() {
     currentPage += 1;
-    console.log(currentPage, PageCount);
     isShowpageBtn(currentPage, PageCount);
     $('.movies_message').html('');
     $('.page p').html("第" + currentPage + "页/共" + PageCount + "页");
