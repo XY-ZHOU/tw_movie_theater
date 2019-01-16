@@ -8,4 +8,9 @@ class ItemsStorage {
   getStorageItems() {
     return JSON.parse(this.itemsStorage.getItem('movies'));
   }
+  filterItems(filterWord) {
+    let allmovies = this.getStorageItems();
+    let filterMovies = allmovies.filter(movie => movie.genres.includes(filterWord));
+    return filterMovies;
+  }
 }
