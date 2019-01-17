@@ -1,6 +1,6 @@
 $(function() {
   let itemsStorage = new ItemsStorage(localStorage);
-  itemsStorage.storageItems(movies);
+  itemsStorage.storageItems(MOVIESDATA);
   let allMovies = itemsStorage.getStorageItems();
   showMovies(allMovies);
   listenerOfSort(itemsStorage);
