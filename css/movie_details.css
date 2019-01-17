@@ -1,5 +1,5 @@
 .main {
-  min-height: 800px;
+  min-height: 850px;
 }
 .movie_name {
   font-size: 25px;
@@ -42,12 +42,15 @@ img {
 }
 .movie_item {
   display: inline-block;
-  width: 15%;
-  padding: 7px 10px;
-  margin: 10px 5px 0px 0px;
+  width: 150px;
+  padding: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 .movie_title p {
   text-align: center;
   margin-bottom: 5px;
+}
+.movie_item img {
+  height: 195px;
+  width: 130px;
 }
