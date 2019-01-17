@@ -36,4 +36,4 @@ function getReview(id, callback, count = 2, start = 0) {
     }
   })
 }
-getReview(1292223, viewComments, 5)
+getReview(id, viewComments, 5)
