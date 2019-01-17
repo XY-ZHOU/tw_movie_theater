@@ -34,38 +34,35 @@
         <h3>{{:title}}</h3>
       <h5>{{:original_title}}</h5>
       </script>
-      <div class="movie_picture"></div>
-      <script id="movie_picture" type="text/x-jsrender">
-        <img src="{{:image}}"/>
-      </script>
-      <ul class="movie_information"></ul>
-      <script id="movie_information" type="text/x-jsrender">
-        <ul>
-        <li>导演：{{:directors}}</li>
-        <li>演员：{{:casts}}</li>
-        <li>类型：{{:genres}}</li>
-        <li>上映年份：{{:year}}</li>
-        <li>影片评分：{{:rating}}</li>
-      </ul>
-      </script>
+      <div class="clearfix">
+        <div class="movie_picture "></div>
+        <script id="movie_picture" type="text/x-jsrender">
+          <img src="{{:image}}"/>
+        </script>
+        <div class="movie_information "></div>
+        <script id="movie_information" type="text/x-jsrender">
+          <ul>
+          <li>导演：{{:directors}}</li>
+          <li>演员：{{:casts}}</li>
+          <li>类型：{{:genres}}</li>
+          <li>上映年份：{{:year}}</li>
+          <li>影片评分：{{:rating}}</li>
+          </ul>
+        </script>
+      </div>
       <div class="movie_evaluation">
         <div class="movie_evaluation_logo">
           豆瓣影评TOP5
         </div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="movie_content">
         </ul>
       </div>
-    </div>
-    <div class="recommendation">
-      <div>
-        电影推荐
+      <div class="recommendation">
+        <div class="recommendation_title">
+          电影推荐
+        </div>
+        <div class="move_recommendation"></div>
       </div>
-      <div class="move_recommendation"></div>
     </div>
     <footer class="footer">
       Copyright ©2019 ThoughtWorks All Rights Reserved
@@ -78,6 +75,7 @@
     <script type="text/javascript" src="../lib/type.js"></script>
     <script src="../js/details.js">
     </script>
+    <script src="../js/createRequest.js"></script>
     <script src="../js/movie_recommendation.js" type="text/javascript">
     </script>
     <script src="../js/item_storage.js"></script>
