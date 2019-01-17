@@ -1,6 +1,6 @@
 $(function() {
   var items = new ItemsStorage(window.localStorage);
-  items.storageItems(MOVIES_DATA);
+  items.storageItems(MOVIESDATA);
   let moviesArr = items.getStorageItems();
   var typeArr = $(".filter_nav li a");
   console.log(typeArr);
