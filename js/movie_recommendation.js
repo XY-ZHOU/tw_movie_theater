@@ -3,7 +3,7 @@ for (i = 1; i < 7; i++) {
 }
 
 function recommendation() {
-  var i = parseInt(Math.random() * 30, 10) + 1;
+  var i = parseInt(Math.random() * 200, 10) + 1;
   let label = `<a href='movie_details.html?=` + MOVIESDATA[i].id + `'  class="movie_item" id=` + MOVIESDATA[i].id + `>
               <div>
               <div class="movie_img">
