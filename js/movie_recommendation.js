@@ -4,15 +4,15 @@ for (i = 1; i < 7; i++) {
 
 function recommendation() {
   var i = parseInt(Math.random() * 30, 10) + 1;
-  let label = `<a href='movie_details.html?=` + movies[i].id + `'  class="movie_item" id=` + movies[i].id + `>
+  let label = `<a href='movie_details.html?=` + MOVIESDATA[i].id + `'  class="movie_item" id=` + MOVIESDATA[i].id + `>
               <div>
               <div class="movie_img">
-              <img src=` + movies[i].image + ` alt=""/>
+              <img src=` + MOVIESDATA[i].image + ` alt=""/>
               </div>
               <div class="movie_title">
-              <p class="name">` + movies[i].title + `</p>
+              <p class="name">` + MOVIESDATA[i].title + `</p>
               <p class="movie_score">
-              评分：` + movies[i].rating + `
+              评分：` + MOVIESDATA[i].rating + `
               </p>
              </div>
              </div>

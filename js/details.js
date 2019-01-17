@@ -1,9 +1,9 @@
 var data = [];
 var idItem = location.href.split('=');
 var id = idItem[1];
-for (let i = 1; i < movies.length; i++) {
-  if (id === movies[i].id) {
-    data = movies[i];
+for (let i = 1; i < MOVIESDATA.length; i++) {
+  if (id === MOVIESDATA[i].id) {
+    data = MOVIESDATA[i];
   }
 }
 var template_name = $.templates("#movie_name");
