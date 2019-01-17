@@ -5,7 +5,7 @@
     <title>
       movie details
     </title>
-    <link href="../css/movie_details.css" rel="stylesheet"/>
+    <link href="../css/movie_details_1.css" rel="stylesheet"/>
     <link href="../css/unified.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
@@ -14,8 +14,8 @@
         <img src="../images/tw_logo.png"/>
       </div>
       <div class="search_box">
-        <input class="search_txt" placeholder=" 输入你要搜索的内容" type="text" id="input"/>
-        <button class="btn search_btn" id="btn">
+        <input class="search_txt" placeholder=" 输入你要搜索的内容" type="text"/>
+        <button class="btn search_btn">
           搜索
         </button>
       </div>
@@ -54,7 +54,12 @@
         <div class="movie_evaluation_logo">
           豆瓣影评TOP5
         </div>
-        <ul class="movie_content">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
       <div class="recommendation">
@@ -71,16 +76,16 @@
     </script>
     <script src="https://www.jsviews.com/download/jsrender.min.js">
     </script>
-    <script src="../lib/movies.js"></script>
-    <script type="text/javascript" src="../lib/type.js"></script>
+    <script src="../lib/movies.js">
+    </script>
     <script src="../js/details.js">
     </script>
-    <script src="../js/createRequest.js"></script>
     <script src="../js/movie_recommendation.js" type="text/javascript">
     </script>
-    <script src="../js/item_storage.js"></script>
-    <script src="../js/get_movies.js"></script>
-    <script src="../js/show_movies.js"></script>
     <script type="text/javascript" src="../js/search.js"></script>
-  </body>
+    <script src="../js/item_storage.js"></script>
+    <script src="../js/show_movies.js"></script>
+    <script type="text/javascript" src="../lib/type.js"></script>
+  </script>
+</body>
 </html>
