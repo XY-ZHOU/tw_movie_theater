@@ -3,10 +3,8 @@ $(function() {
   items.storageItems(MOVIESDATA);
   let moviesArr = items.getStorageItems();
   var typeArr = $(".filter_nav li a");
-  console.log(typeArr);
   $("#btn").click(function() {
     var movies = $("#input").val();
-    console.log(movies);
     if (movies) {
       $("#input").val("");
       for (let j in typeArr) {
@@ -39,7 +37,6 @@ $(function() {
   $("#input").keydown(function(e) {
     if (e.keyCode == 13) {
       var movies = $("#input").val();
-      console.log(movies);
       if (movies) {
         $("#input").val("");
         for (let j in typeArr) {
