@@ -77,15 +77,18 @@
 .filter_title {
   height: 30px;
   line-height: 30px;
-  background: #eeeeee;
   padding-left: 20px;
+}
+
+.filter_lists {
+   background: #fff;
 }
 
 .filter_nav {
   width: 80%;
   margin: 0 auto;
   padding: 15px 0px;
-}
+} 
 
 .filter_nav li {
   display: flex;
@@ -102,7 +105,6 @@
 
 .filter_content {
   height: 600px;
-  background: #eeeeee;
 }
 
 .filter_content>div {

@@ -8,10 +8,10 @@ function showMovies(items) {
   $('.page p').html("第" + currentPage + "页/共" + PageCount + "页");
   isShowpageBtn(currentPage, PageCount);
   traverseItems(currentPage, itemCount, items);
-  previousPageAndNextPage(currentPage,PageCount,itemCount,items);
+  previousPageAndNextPage(currentPage, PageCount, itemCount, items);
 }
 
-function previousPageAndNextPage(currentPage,PageCount,itemCount,items){
+function previousPageAndNextPage(currentPage, PageCount, itemCount, items) {
   $('.next_page').click(function() {
     currentPage += 1;
     isShowpageBtn(currentPage, PageCount);
@@ -30,7 +30,7 @@ function previousPageAndNextPage(currentPage,PageCount,itemCount,items){
 
 function traverseItems(currentPage, itemCount, items) {
   for (let i = (currentPage - 1) * itemCount; i < itemCount * currentPage; i++) {
-    let label = `<a  class="movie_item" id=`+items[i].id+`>
+    let label = `<a href='movie_details.html?=` + items[i].id + `'  class="movie_item" id=` + items[i].id + `>
               <div>
               <div class="movie_img">
               <img src=` + items[i].image + ` alt=""/>
@@ -48,7 +48,7 @@ function traverseItems(currentPage, itemCount, items) {
 }
 
 function isShowpageBtn(currentPage, PageCount) {
-  if (currentPage <2) {
+  if (currentPage < 2) {
     $('.previous_page').hide();
   } else {
     $('.previous_page').show();
